@@ -1,0 +1,42 @@
+menu "Driver Configuration"
+
+config DRIVERS_BUILD
+	bool "Build Drivers"
+	default y
+
+config DRIVER_ACPI
+	bool "ACPI Support"
+	depends on DRIVERS_BUILD
+	default y
+
+config DRIVER_ATA
+	bool "ATA/SATA Driver"
+	depends on DRIVERS_BUILD
+	default y
+
+config DRIVER_USB
+	bool "USB Driver"
+	depends on DRIVERS_BUILD
+	default y
+
+config DRIVER_AUDIO
+	bool "Audio Driver"
+	depends on DRIVERS_BUILD
+	default y
+
+config DRIVER_GPU
+	bool "GPU Driver"
+	depends on DRIVERS_BUILD
+	default n
+
+config DRIVER_NETWORK
+	bool "Network Driver"
+	depends on DRIVERS_BUILD
+	default y
+
+config DRIVER_NVME
+	bool "NVME Driver"
+	depends on DRIVERS_BUILD
+	default y
+
+endmenu

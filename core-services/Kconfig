@@ -1,0 +1,47 @@
+menu "Core Services"
+
+config CORE_SERVICES
+	bool "Build Core Services"
+	default y
+
+config DAEMON_MANAGER
+	bool "Daemon Manager"
+	depends on CORE_SERVICES
+	default y
+
+config SERVICE_MANAGER
+	bool "Service Manager"
+	depends on CORE_SERVICES
+	default y
+
+config PROCESS_MANAGER
+	bool "Process Manager"
+	depends on CORE_SERVICES
+	default y
+
+config LOGGING_SERVICE
+	bool "Logging Service"
+	depends on CORE_SERVICES
+	default y
+
+config IPC_SERVICE
+	bool "IPC Service"
+	depends on CORE_SERVICES
+	default y
+
+config EVENT_SERVICE
+	bool "Event Service"
+	depends on CORE_SERVICES
+	default y
+
+config TIMER_SERVICE
+	bool "Timer Service"
+	depends on CORE_SERVICES
+	default y
+
+config SCHEDULER
+	bool "Scheduler"
+	depends on CORE_SERVICES
+	default y
+
+endmenu

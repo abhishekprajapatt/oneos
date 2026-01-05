@@ -1,0 +1,47 @@
+menu "Applications"
+
+config BUILD_APPLICATIONS
+	bool "Build Applications"
+	default y
+
+config APP_ACTIVITY_MONITOR
+	bool "Activity Monitor"
+	depends on BUILD_APPLICATIONS
+	default y
+
+config APP_CALCULATOR
+	bool "Calculator"
+	depends on BUILD_APPLICATIONS
+	default y
+
+config APP_FILE_MANAGER
+	bool "File Manager"
+	depends on BUILD_APPLICATIONS
+	default y
+
+config APP_TERMINAL
+	bool "Terminal"
+	depends on BUILD_APPLICATIONS
+	default y
+
+config APP_TEXT_EDITOR
+	bool "Code Editor"
+	depends on BUILD_APPLICATIONS
+	default y
+
+config APP_BROWSER
+	bool "Browser"
+	depends on BUILD_APPLICATIONS
+	default y
+
+config APP_MAIL
+	bool "Mail"
+	depends on BUILD_APPLICATIONS
+	default n
+
+config APP_MEDIA_PLAYER
+	bool "Media Player"
+	depends on BUILD_APPLICATIONS
+	default n
+
+endmenu

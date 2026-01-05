@@ -1,0 +1,42 @@
+menu "Compatibility Layer"
+
+config COMPAT_LAYER
+	bool "Build Compatibility Layer"
+	default y
+
+config COMPAT_POSIX
+	bool "POSIX Compliance"
+	depends on COMPAT_LAYER
+	default y
+
+config COMPAT_SYSCALL
+	bool "System Call Mapping"
+	depends on COMPAT_LAYER
+	default y
+
+config COMPAT_API_WRAPPER
+	bool "API Wrapper Support"
+	depends on COMPAT_LAYER
+	default y
+
+config COMPAT_EMULATION
+	bool "Binary Emulation"
+	depends on COMPAT_LAYER
+	default y
+
+config COMPAT_LIBRARY_LOADER
+	bool "Library Loader"
+	depends on COMPAT_LAYER
+	default y
+
+config COMPAT_ABI_LAYER
+	bool "ABI Compatibility"
+	depends on COMPAT_LAYER
+	default y
+
+config COMPAT_LEGACY_SUPPORT
+	bool "Legacy Application Support"
+	depends on COMPAT_LAYER
+	default n
+
+endmenu

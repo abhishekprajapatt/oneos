@@ -1,0 +1,107 @@
+mainmenu "OnEOS Configuration"
+
+config ONEOS_VERSION
+	string "OnEOS Version"
+	default "1.0.0"
+
+config ONEOS_ARCH
+	string "Architecture"
+	default "x86"
+	help
+	  Select target architecture
+
+choice
+	prompt "Architecture Selection"
+	default ARCH_X86
+
+config ARCH_X86
+	bool "x86"
+
+config ARCH_ARM64
+	bool "ARM64"
+
+config ARCH_RISCV
+	bool "RISCV"
+
+endchoice
+
+menu "Kernel Configuration"
+
+config KERNEL_DEBUG
+	bool "Enable kernel debugging"
+	default n
+	help
+	  Enable kernel debug symbols
+
+config KERNEL_MODULES
+	bool "Enable kernel modules"
+	default y
+	help
+	  Enable kernel module support
+
+config KERNEL_PREEMPTION
+	bool "Preemptible kernel"
+	default y
+	help
+	  Enable kernel preemption
+
+endmenu
+
+menu "Driver Configuration"
+
+config DRIVERS_BUILD
+	bool "Build drivers"
+	default y
+
+config DRIVER_ATA
+	bool "ATA driver"
+	depends on DRIVERS_BUILD
+	default y
+
+config DRIVER_USB
+	bool "USB driver"
+	depends on DRIVERS_BUILD
+	default y
+
+config DRIVER_NETWORK
+	bool "Network drivers"
+	depends on DRIVERS_BUILD
+	default y
+
+endmenu
+
+menu "Filesystem Configuration"
+
+config FS_EXT4
+	bool "EXT4 support"
+	default y
+
+config FS_BTRFS
+	bool "BTRFS support"
+	default n
+
+config FS_NTFS
+	bool "NTFS support"
+	default n
+
+config FS_VFAT
+	bool "VFAT support"
+	default y
+
+endmenu
+
+menu "Build Options"
+
+config BUILD_OPTIMIZATION
+	string "Optimization level"
+	default "O2"
+
+config BUILD_DEBUG_INFO
+	bool "Include debug information"
+	default y
+
+config BUILD_STATIC
+	bool "Build static binaries"
+	default n
+
+endmenu

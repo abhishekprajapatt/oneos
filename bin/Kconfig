@@ -1,0 +1,31 @@
+menu "Binary Utilities"
+
+config BUILD_TOOLS
+	bool "Build Tools"
+	default y
+
+config CLI_UTILITIES
+	bool "CLI Utilities"
+	default y
+
+config CORE_UTILITIES
+	bool "Core Utilities"
+	default y
+
+config FILE_UTILITIES
+	bool "File Utilities"
+	default y
+
+config MOUNT_UTILITIES
+	bool "Mount Utilities"
+	default y
+
+config SYSTEM_UTILITIES
+	bool "System Utilities"
+	default y
+
+config TEXT_PROCESSING
+	bool "Text Processing"
+	default y
+
+endmenu

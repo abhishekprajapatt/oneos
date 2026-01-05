@@ -1,0 +1,55 @@
+menu "Architecture Selection"
+
+choice
+	prompt "Target Architecture"
+	default ARCH_X86
+
+config ARCH_X86
+	bool "x86"
+	help
+	  Intel/AMD x86 architecture
+
+config ARCH_ARM64
+	bool "ARM64"
+	help
+	  ARM 64-bit architecture
+
+config ARCH_RISCV
+	bool "RISCV"
+	help
+	  RISCV open-source architecture
+
+endchoice
+
+menu "x86 Configuration"
+	depends on ARCH_X86
+
+config X86_64
+	bool "64-bit x86"
+	default y
+
+config X86_32
+	bool "32-bit x86"
+	default n
+
+endmenu
+
+menu "ARM64 Configuration"
+	depends on ARCH_ARM64
+
+config ARM64_SMP
+	bool "SMP Support"
+	default y
+
+endmenu
+
+menu "RISCV Configuration"
+	depends on ARCH_RISCV
+
+config RISCV_64
+	bool "64-bit RISCV"
+	default y
+
+endmenu
+
+endmenu

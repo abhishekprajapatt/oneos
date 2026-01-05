@@ -1,0 +1,27 @@
+menu "Kernel Configuration"
+
+config KERNEL_VERSION
+	string "Kernel Version"
+	default "1.0.0"
+
+config KERNEL_DEBUG
+	bool "Enable Debug"
+	default y
+
+config KERNEL_MODULES
+	bool "Enable Modules"
+	default y
+
+config KERNEL_SMP
+	bool "SMP (Multiprocessor)"
+	default y
+
+config KERNEL_PREEMPT
+	bool "Preemptible Kernel"
+	default y
+
+config KERNEL_MEMORY_SIZE
+	int "Memory Size (MB)"
+	default 1024
+
+endmenu

@@ -1,0 +1,31 @@
+menu "Filesystem Configuration"
+
+config FS_EXT4
+	bool "EXT4 Support"
+	default y
+
+config FS_EXT3
+	bool "EXT3 Support"
+	default y
+
+config FS_BTRFS
+	bool "BTRFS Support"
+	default n
+
+config FS_VFAT
+	bool "VFAT Support"
+	default y
+
+config FS_NTFS
+	bool "NTFS Support"
+	default n
+
+config FS_NFS
+	bool "NFS Support"
+	default n
+
+config FS_NETWORK
+	bool "Network Filesystem Support"
+	default n
+
+endmenu
