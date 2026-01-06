@@ -1,0 +1,46 @@
+#include "boot.h"
+
+static boot_info_t boot_current_info = {0, 0, 0};
+
+int boot_init(void)
+{
+    boot_current_info.memory_size = 0x80000000;
+    boot_current_info.cpu_count = 4;
+    boot_current_info.boot_device = 0;
+    return 0;
+}
+
+int boot_load_kernel(const char *path)
+{
+    if (!path)
+    {
+        return -1;
+    }
+    return 0;
+}
+
+int boot_get_info(boot_info_t *info)
+{
+    if (!info)
+    {
+        return -1;
+    }
+    info->memory_size = boot_current_info.memory_size;
+    info->cpu_count = boot_current_info.cpu_count;
+    info->boot_device = boot_current_info.boot_device;
+    return 0;
+}
+
+int boot_early_print(const char *msg)
+{
+    if (!msg)
+    {
+        return -1;
+    }
+    return 0;
+}
+
+int boot_setup_framebuffer(void)
+{
+    return 0;
+}

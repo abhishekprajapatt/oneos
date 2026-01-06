@@ -1,0 +1,47 @@
+#ifndef LIB_H
+#define LIB_H
+
+#include "core/lib_core.h"
+#include "libapparmor/libapparmor.h"
+#include "libasan/libasan.h"
+#include "libboost/libboost.h"
+#include "libbz2/libbz2.h"
+#include "libc/libc.h"
+#include "libcap/libcap.h"
+#include "libcrypt/libcrypt.h"
+#include "libcrypto/libcrypto.h"
+#include "libcurl/libcurl.h"
+#include "libdbus/libdbus.h"
+#include "libdl/libdl.h"
+#include "libexpat/libexpat.h"
+#include "libffi/libffi.h"
+#include "libgc/libgc.h"
+#include "libgccrt/libgccrt.h"
+#include "libglib/libglib.h"
+#include "libjson-c/libjson-c.h"
+#include "libltdl/libltdl.h"
+#include "liblzma/liblzma.h"
+#include "libm/libm.h"
+#include "libmagic/libmagic.h"
+#include "libmvec/libmvec.h"
+#include "libncurses/libncurses.h"
+#include "libnsl/libnsl.h"
+#include "libpac/libpac.h"
+#include "libpam/libpam.h"
+#include "libpthread/libpthread.h"
+#include "libreadline/libreadline.h"
+#include "librt/librt.h"
+#include "libselinux/libselinux.h"
+#include "libssl/libssl.h"
+#include "libstdc++/libstdc++.h"
+#include "libsystemd/libsystemd.h"
+#include "libudev/libudev.h"
+#include "libutil/libutil.h"
+#include "libxml2/libxml2.h"
+#include "libxslt/libxslt.h"
+#include "libz/libz.h"
+
+int lib_init_all(void);
+int lib_shutdown_all(void);
+
+#endif

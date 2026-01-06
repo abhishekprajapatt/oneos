@@ -1,0 +1,59 @@
+menu "Standard C Libraries"
+
+config LIB_C
+	bool "C Standard Library (libc)"
+	default y
+
+config LIB_M
+	bool "Math Library (libm)"
+	default y
+
+config LIB_PTHREAD
+	bool "POSIX Threads (libpthread)"
+	default y
+
+config LIB_DL
+	bool "Dynamic Linking Loader (libdl)"
+	default y
+
+config LIB_CRYPTO
+	bool "Cryptography Library (libcrypto)"
+	default y
+
+config LIB_SSL
+	bool "SSL/TLS Library (libssl)"
+	default y
+
+config LIB_CURL
+	bool "HTTP Client Library (libcurl)"
+	default y
+
+config LIB_XML2
+	bool "XML Library (libxml2)"
+	default y
+
+config LIB_Z
+	bool "Compression Library (libz)"
+	default y
+
+config LIB_JSON_C
+	bool "JSON-C Library (libjson-c)"
+	default y
+
+config LIB_GLIB
+	bool "GLib Utility Library (libglib)"
+	default y
+
+config LIB_NCURSES
+	bool "NCurses Library (libncurses)"
+	default y
+
+config LIB_READLINE
+	bool "Readline Library (libreadline)"
+	default y
+
+config LIB_SYSTEMD
+	bool "systemd Library (libsystemd)"
+	default y
+
+endmenu
