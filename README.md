@@ -1,7 +1,7 @@
 # ONEOS - Operating System
 
-A complete operating system implementation with kernel, drivers, filesystem,
-networking, security, and system services. Production-ready code built from scratch.
+A comprehensive operating system in active development with kernel, drivers, filesystem,
+networking, security, and system services. Currently in development phase - experimental and subject to change.
 
 ## Quick Start
 
@@ -138,11 +138,15 @@ Architecture Support
     ARM64 with exception levels
     RISC-V with privilege levels
 
+# Project Status
+
+**Currently In Development** - This project is actively being developed. Features may change. Not recommended for production use yet.
+
 # License and Contributing
 
 GPL v3 License - See LICENSE for details.
 
-Open source for education, research, and development.
+Open source for research, learning, and development.
 
 **What GPL v3 means:**
 
