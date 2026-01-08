@@ -4,9 +4,21 @@ static boot_info_t boot_current_info = {0, 0, 0};
 
 int boot_init(void)
 {
+    // Call assembly boot initialization
+    extern int boot_x86_init(void);
+
     boot_current_info.memory_size = 0x80000000;
     boot_current_info.cpu_count = 4;
     boot_current_info.boot_device = 0;
+
+    return 0;
+}
+
+int boot_enable_paging(void)
+{
+    // Call assembly paging setup
+    extern void enable_paging(void *page_table);
+    enable_paging((void *)0x100000); // Example page table address
     return 0;
 }
 
