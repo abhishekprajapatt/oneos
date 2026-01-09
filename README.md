@@ -1,4 +1,4 @@
-# ONEOS - Operating System
+# 🦍 ONEOS - Operating System
 
 A comprehensive operating system in active development with kernel, drivers, filesystem,
 networking, security, and system services. Currently in development phase - experimental and subject to change.
@@ -163,6 +163,8 @@ Open source for research, learning, and development.
 - New drivers appreciated
 - Feature proposals via issues
 - All contributions remain under GPL v3
+
+> 💡 **Git Pro Tip:** ❌Commit - ✅Bulk Commit 😂 (The real developer experience)
 
 GPL ensures OneOS remains free and open for the community.
 
