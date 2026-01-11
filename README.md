@@ -180,3 +180,6 @@ GPL ensures OneOS remains free and open for the community.
 - Kernel Layout: kernel.ld
 - Tests: tests/ directory
 - Source: Full implementation included
+
+
+<img width="1253" height="912" alt="image" src="https://github.com/user-attachments/assets/5449db9d-69ce-48a8-b9da-402241f3f030" />
