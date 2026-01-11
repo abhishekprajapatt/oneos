@@ -182,4 +182,10 @@ GPL ensures OneOS remains free and open for the community.
 - Source: Full implementation included
 
 
-<img width="1253" height="912" alt="image" src="https://github.com/user-attachments/assets/5449db9d-69ce-48a8-b9da-402241f3f030" />
+## CLI Screenshots
+
+<img width="1246" height="580" alt="image" src="https://github.com/user-attachments/assets/0b503517-71ae-4779-b4d8-683a0510b7e5" />
+<img width="285" height="1060" alt="image" src="https://github.com/user-attachments/assets/7f98d7d5-7849-42e4-8c3e-8b4a1fb40531" />
+<img width="506" height="805" alt="image" src="https://github.com/user-attachments/assets/c9e2733a-2105-41b4-aee7-287e5646dc43" />
+<img width="470" height="866" alt="image" src="https://github.com/user-attachments/assets/c0725734-7991-4d1b-9476-d96fb0bb8f03" />
+<img width="519" height="856" alt="image" src="https://github.com/user-attachments/assets/50f74bfc-41b5-4b78-961b-0af0ed1233a6" />
