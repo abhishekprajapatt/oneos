@@ -31,12 +31,13 @@ void cli_init_context(void)
 
     // Set privilege level (simplified for cross-platform)
     g_context.current_level = PRIV_USER;
-    #ifdef __linux__
-    if (getuid() == 0) {
+#ifdef __linux__
+    if (getuid() == 0)
+    {
         g_context.current_level = PRIV_ROOT;
         strcpy(g_context.current_user, "root");
     }
-    #endif
+#endif
 }
 
 void cli_cleanup_context(void)
